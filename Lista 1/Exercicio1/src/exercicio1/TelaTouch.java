@@ -1,15 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package exercicio1;
 import java.util.Scanner;
 
-/**
- *
- * @author brcol
- */
 public class TelaTouch {
     private float luminosidade; //luminosidade vai de 0 a 100
     
@@ -48,7 +39,7 @@ public class TelaTouch {
             mostrar("Esse nivel de luminosidade pode ser prejudicial para a visao.");
             mostrar("Deseja continiuar? (S/N)");
             String resposta = ler(); //variavel auxiliar
-            if(resposta.equals("N"))
+            if(resposta.equals("N") || resposta.equals("n"))
                luminosidade = 80; //valor maximo "recomendavel" de luminosidade
         }
     }
