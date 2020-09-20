@@ -35,13 +35,21 @@ public class Termo {
         int cont;
         double exp = x;
         
-        //Calcular a potência do modo tradicional
-        for(cont = grau; cont != 1; cont--)
+        if(grau == 0)
         {
-            exp *= x;
+            //Termo independente
+            return coeficiente;
         }
-        
-        return exp*coeficiente;
+        else
+        {
+            //Calcular a potência do modo tradicional
+            for(cont = grau; cont != 1; cont--)
+            {
+                exp *= x;
+            }
+
+            return exp*coeficiente;
+        }
     }
     
 }

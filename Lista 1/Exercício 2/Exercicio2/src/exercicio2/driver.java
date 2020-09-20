@@ -31,7 +31,7 @@ public class driver {
             System.out.println(" está ligado");
         else
             System.out.println(" está desligado");
-        
+
     }
     
     public void ligaDispositivo()
