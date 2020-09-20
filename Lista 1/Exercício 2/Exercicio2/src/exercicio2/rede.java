@@ -11,7 +11,6 @@ package exercicio2;
  */
 public class rede extends driver{
     
-    private String conectado;
     private float franquiaDados;
      
     
