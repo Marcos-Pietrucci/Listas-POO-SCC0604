@@ -1,47 +1,48 @@
-package exercicio2;
+package ex2;
 import java.util.*;
 
 /**
  * 
  */
-public class Turma {
+public class Curso {
 
     /**
      * Default constructor
      */
-    public Turma() {
+    public Curso() {
     }
 
     /**
      * 
      */
-    private int QtdeAlunos;
+    private String Nome;
 
     /**
      * 
      */
-    private String Representante;
+    private String Coordenador;
 
     /**
      * 
      */
-    private int Ano_turma;
+    private int Duracao;
 
 
 
     /**
      * @return
      */
-    public int getQtdeAlunos() {
+    public String getNome() {
         // TODO implement here
-        return 0;
+        return "";
     }
 
     /**
-     * @param aluno
+     * @return
      */
-    public void matriculaAluno(Matricula aluno) {
+    public int getDuracao() {
         // TODO implement here
+        return 0;
     }
 
 }

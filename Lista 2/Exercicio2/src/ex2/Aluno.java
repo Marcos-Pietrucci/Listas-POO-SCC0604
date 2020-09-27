@@ -1,15 +1,15 @@
-package exercicio2;
+package ex2;
 import java.util.*;
 
 /**
  * 
  */
-public class Curso {
+public class Aluno {
 
     /**
      * Default constructor
      */
-    public Curso() {
+    public Aluno() {
     }
 
     /**
@@ -20,13 +20,12 @@ public class Curso {
     /**
      * 
      */
-    private String Coordenador;
+    private int Idade;
 
     /**
      * 
      */
-    private int Duracao;
-
+    private int AnoIngresso;
 
 
     /**
@@ -35,14 +34,6 @@ public class Curso {
     public String getNome() {
         // TODO implement here
         return "";
-    }
-
-    /**
-     * @return
-     */
-    public int getDuracao() {
-        // TODO implement here
-        return 0;
     }
 
 }
