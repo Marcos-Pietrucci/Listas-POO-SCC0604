@@ -19,6 +19,8 @@ public class Ex1 {
             v = o.proximo();
             o.manutencao(v);
         }
+        
+        int i;
     }
     
 }
