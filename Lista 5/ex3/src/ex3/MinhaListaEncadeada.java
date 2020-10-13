@@ -1,13 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ex3;
 
 /**
- *
- * @author marco
+ * @version 1.0
+ * @author Marcos Pietrucci
  */
 public class MinhaListaEncadeada {
     
@@ -19,6 +14,10 @@ public class MinhaListaEncadeada {
         this.elem = null;
     }
     
+    /**
+     * Método que insere elemento no final da lista
+     * @param pnum 
+     */
     public void inserirFinal(int pnum)
     {
         Elemento nodo = new Elemento(pnum);
@@ -40,6 +39,11 @@ public class MinhaListaEncadeada {
         }
     }
     
+    /**
+     * 
+     * Método que remove elemento da lista
+     * @param pnum 
+     */
     public void removerElemento(int pnum) 
     {        
         if(this.elem == null) //Nao ha nenhum elemento na lista
@@ -78,6 +82,10 @@ public class MinhaListaEncadeada {
         }
     }
     
+    /**
+     * Insere os elementos de 1 ate n no final da lista
+     * @param n 
+     */
     public void inserirN_elementos(int n)
     {
         int i;
@@ -87,6 +95,10 @@ public class MinhaListaEncadeada {
         }    
     }
     
+    /**
+     * 
+     * Percorre a lista exibindo seus elementos
+     */
     public void percorreLista()
     {
         if(this.elem == null) //Nao ha nenhum elemento na lista
