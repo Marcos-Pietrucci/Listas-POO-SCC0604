@@ -1,25 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ex4;
 
 /**
- *
- * @author brcol
+ * 
+ * Esta classe implementa duas formas de gerarmos Stack Overflow:
+ * 1) Forma1: uma função recursiva sem condição de parada.
+ * 2) Forma2: muitas funções empilhadas na stack.
+ * 
+ * Para a explicação detalhada solicitada pelo exercício, ver o PDF ex4.
  */
 public class StackOverflow {
     
-    public void a() {
-            b();
-        }
-        
-    public void b() {
-        a();
+    public void Forma1() {
+        Forma1();
     }
     
-    public void c() {
-        c();
+    public void Forma2() {
+        a();
+    }
+        
+    public void a() {
+        b();
+    }
+    
+    public void b() {
+        Forma2();
     }
 }
