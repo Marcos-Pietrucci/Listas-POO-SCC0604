@@ -48,7 +48,7 @@ string NumeroComplexo::toString()
 {
     string txt;
     
-    txt = to_string(this->a) + " j*(" + to_string(this->b) + ") ";
+    txt = to_string(this->a) + " + j*(" + to_string(this->b) + ") ";
     
     return txt;
 }
