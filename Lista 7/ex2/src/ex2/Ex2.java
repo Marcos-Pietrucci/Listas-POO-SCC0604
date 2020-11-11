@@ -3,6 +3,7 @@ package ex2;
 
 public class Ex2 {
     
+    //Ordenação
     public static <TIPO extends Comparable> void InsertionSort(TIPO[] V) throws RuntimeException
     {
         int i, j;
@@ -25,9 +26,11 @@ public class Ex2 {
     
     public static void main(String[] args) {
        
+        //Cria o vetor de nomeFrutas
         nomeFrutas[] nom = new nomeFrutas[10];
         int i;
         
+        //Define nome das frutas
         nom[0] = new nomeFrutas("Uva");
         nom[1] = new nomeFrutas("Mamao");
         nom[2] = new nomeFrutas("Abacaxi");

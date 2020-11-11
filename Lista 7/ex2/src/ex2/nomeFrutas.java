@@ -3,7 +3,7 @@ package ex2;
 
 public class nomeFrutas implements Comparable{
     
-    String nome;
+    private String nome;
     
     nomeFrutas(String nome)
     {
