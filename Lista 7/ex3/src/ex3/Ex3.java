@@ -42,23 +42,18 @@ public class Ex3 {
         
         //Remover o nodo 7
         valores.removeNodo(7);
-        if(valores.buscar(7))
-            System.out.println("Encontrei o 7!!");
-        else
-            System.out.println("Não encontrei o 7 :(");
-        
+        System.out.println("Removi o 7");
         valores.imprimirEmOrdem();
         
         //Remover o nodo 8
         valores.removeNodo(8);
-        
-        if(valores.buscar(8))
-            System.out.println("Encontrei o 8!!");
-        else
-            System.out.println("Não encontrei o 8 :(");
-
-         valores.imprimirEmOrdem();
-        
+        System.out.println("Removi o 8");
+        valores.imprimirEmOrdem();
+         
+        //Remover o nodo 4
+        valores.removeNodo(4);
+        System.out.println("Removi o 4");
+        valores.imprimirEmOrdem();
         
     }
     
