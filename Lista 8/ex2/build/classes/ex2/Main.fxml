@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="380.0" prefWidth="230.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="ex2.MainController">
+    <children>
+        <Button fx:id="bPush" layoutX="60.0" layoutY="342.0" onAction="#pushClick" text="Push" />
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Button fx:id="bPop" layoutX="120.0" layoutY="342.0" onAction="#popClick" text="Pop" />
+      <TextField fx:id="tf" layoutX="15.0" layoutY="306.0" prefHeight="27.0" prefWidth="200.0" promptText="Digite aqui o que quer inserir" />
+      <ListView fx:id="listView" layoutX="15.0" layoutY="53.0" prefHeight="195.0" prefWidth="200.0" />
+      <Button fx:id="bClear" layoutX="145.0" layoutY="270.0" onAction="#clearClick" text="Clear" />
+      <TextField fx:id="tfSize" layoutX="18.0" layoutY="270.0" prefHeight="27.0" prefWidth="58.0" text="3" />
+      <Label layoutX="20.0" layoutY="253.0" text="Tamanho pilha" />
+      <Button fx:id="bOk" layoutX="76.0" layoutY="270.0" onAction="#okClick" text="Ok" />
+      <Label layoutX="81.0" layoutY="14.0" text="Push e pop" />
+      <Label layoutX="41.0" layoutY="31.0" text="Pilha de tamanho variável" />
+      <Label layoutX="133.0" layoutY="253.0" text="Limpar pilha" />
+    </children>
+</AnchorPane>
