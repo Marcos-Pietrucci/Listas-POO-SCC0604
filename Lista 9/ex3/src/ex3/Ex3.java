@@ -9,7 +9,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.LineNumberReader;
-import java.io.Reader;
 
 /**
  *
@@ -45,7 +44,7 @@ public class Ex3 {
                 System.out.print(linha);
                 linha = line_reader.readLine();
                 if(num == 10)
-                    System.out.println(" ---> !!CHEGOU NA LINHA 10!!");
+                    System.out.println(" ----> !!CHEGOU NA LINHA 10!!");
                 else
                     System.out.print("\n");
                         
