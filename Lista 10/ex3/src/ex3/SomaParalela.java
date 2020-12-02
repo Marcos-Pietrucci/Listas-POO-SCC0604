@@ -24,7 +24,7 @@ public class SomaParalela implements Runnable{
     @Override
     public void run()
     {
-        int i;
+        long i;
         long num = 0;
         
         for(i = 0; i < numero_calculos/nCores; i++)

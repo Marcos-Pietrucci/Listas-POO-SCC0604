@@ -11,10 +11,10 @@ public class Ex3 {
         
         //Variáveis comuns
         int nCores = Runtime.getRuntime().availableProcessors(); // Tenho 12 Cores
-        long numero_calculos = 10000000000L;
+        long numero_calculos = 10000000L;
         Random ra = new Random();
         double num;
-        int i;
+        long i;
         long t, num_long = 0;
         
         //Operação SQRT Serial
@@ -23,9 +23,10 @@ public class Ex3 {
         {
             num = 1 + 99*ra.nextDouble();
             Math.sqrt(num);
+            //System.out.println(i);
         }
         t = System.currentTimeMillis() - t;
-        System.out.println("(Serial)Demorou: " + t + " mili-segundos\n");
+        System.out.println("(Serial SQRT)Demorou: " + t + " mili-segundos");
         /******************************************/
         
         //Operação SQRT Paralela
@@ -57,7 +58,6 @@ public class Ex3 {
         t11.start();
         t12.start();
        
-       
         try
         {
             t1.join();
@@ -78,11 +78,9 @@ public class Ex3 {
             System.out.println("Erro: " + e.getMessage());
         }
         t = System.currentTimeMillis() - t;
-        System.out.println("(Paralelo)Demorou: " + t + " mili-segundos");
+        System.out.println("(Paralelo SQRT)Demorou: " + t + " mili-segundos\n");
         /******************************************/
-        
-        System.exit(0);
-        
+                
         //Operações Simples Serial
         t = System.currentTimeMillis();
         for(i = 0; i < numero_calculos; i++)
@@ -90,7 +88,7 @@ public class Ex3 {
             num_long++;
         }
         t = System.currentTimeMillis() - t;
-        System.out.println("(Serial)Demorou: " + t + " mili-segundos\n");
+        System.out.println("(Serial simples)Demorou: " + t + " mili-segundos");
         /******************************************/
         
         //Operação Simples Paralela
@@ -122,7 +120,6 @@ public class Ex3 {
         t11.start();
         t12.start();
        
-       
         try
         {
             t1.join();
@@ -143,7 +140,7 @@ public class Ex3 {
             System.out.println("Erro: " + e.getMessage());
         }
         t = System.currentTimeMillis() - t;
-        System.out.println("(Paralelo)Demorou: " + t + " mili-segundos");
+        System.out.println("(Paralelo simples)Demorou: " + t + " mili-segundos\n");
         /******************************************/
         
         //Operação POW serial - Quadrado de um número
@@ -154,7 +151,7 @@ public class Ex3 {
             Math.pow(num, 2);
         }
         t = System.currentTimeMillis() - t;
-        System.out.println("(Serial)Demorou: " + t + " mili-segundos\n");
+        System.out.println("(Serial POW)Demorou: " + t + " mili-segundos");
         /**********************************************/
         
         //Operação POW paralela - Quadrado de um número
@@ -186,7 +183,6 @@ public class Ex3 {
         t11.start();
         t12.start();
        
-       
         try
         {
             t1.join();
@@ -207,7 +203,7 @@ public class Ex3 {
             System.out.println("Erro: " + e.getMessage());
         }
         t = System.currentTimeMillis() - t;
-        System.out.println("(Paralelo)Demorou: " + t + " mili-segundos");
+        System.out.println("(Paralelo POW)Demorou: " + t + " mili-segundos\n");
         /******************************************/
         
         //Operação Cosseno Serial
@@ -218,9 +214,8 @@ public class Ex3 {
             Math.cos(num);
         }
         t = System.currentTimeMillis() - t;
-        System.out.println("(Serial)Demorou: " + t + " mili-segundos\n");
+        System.out.println("(Serial COS)Demorou: " + t + " mili-segundos");
         /******************************************/
-        
         
         //Operação Cosseno paralela
         t1 = new Thread(new CosParalela(nCores, numero_calculos));
@@ -272,7 +267,7 @@ public class Ex3 {
             System.out.println("Erro: " + e.getMessage());
         }
         t = System.currentTimeMillis() - t;
-        System.out.println("(Paralelo)Demorou: " + t + " mili-segundos");
+        System.out.println("(Paralelo COS)Demorou: " + t + " mili-segundos\n");
 
     }
     

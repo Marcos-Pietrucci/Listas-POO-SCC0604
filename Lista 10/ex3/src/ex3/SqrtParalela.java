@@ -27,7 +27,7 @@ public class SqrtParalela implements Runnable{
     {
         Random ra = new Random();
         double num;
-        int i;
+        long i;
         
         for(i = 0; i < numero_calculos/nCores; i++)
         {
